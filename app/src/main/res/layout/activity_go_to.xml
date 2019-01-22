@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainGoTo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gotoback">
+
+
+    <LinearLayout
+        android:id="@+id/startPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:id="@+id/startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startTextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/startAutoComplete"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:hint="Choose your start position"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/destPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="40dp">
+
+
+        <TextView
+            android:id="@+id/destTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/destTextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/destAutoComplete"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:hint="Choose your destination"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="40dp">
+
+
+        <TextView
+            android:id="@+id/detailsNameTextView"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="@string/detailsNameTextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/detailsNameAutoComplete"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:hint="Enter your name"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/detailsEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/detailsEmailTextView"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="@string/detailsEmailTextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/detailsEmailAutoComplete"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:hint="Enter your email"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailsPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="30dp"
+        android:inputType="numberSigned">
+
+        <TextView
+            android:id="@+id/detailsPhoneTextView"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="@string/detailsPhoneTextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/detailsPhoneAutoComplete"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:hint="Enter your phone number"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textStyle="bold" />
+
+</LinearLayout>
